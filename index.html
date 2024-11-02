@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>while</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,109,121,1) 35%, rgba(9,121,48,1) 100%);
+        }
+
+        .groupDiv {
+            height: 30px;
+            width: 90px;
+            padding: 15px;
+            border: 1px solid black;
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-parent {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.369);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+        }
+
+        .modal {
+            height: 200px;
+            width: 500px;
+            border: 1px solid black;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .user-div {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid black;
+        }
+
+        .modal-body {
+            height: 100%;
+            /* overflow: scroll; */
+        }
+        .modal-head{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        button{
+            height: 30px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-parent">
+        <div class="modal">
+            <div class="modal-head">
+                <button onClick="closeModal()">close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
